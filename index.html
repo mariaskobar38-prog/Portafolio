@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio - Mariana Escobar Guzmán</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:#f7f1eb;
+    color:#4e342e;
+    line-height:1.6;
+}
+
+header{
+    background:linear-gradient(135deg,#b08968,#ddb892);
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:1.2rem;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding:40px 0;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    margin-bottom:25px;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+h2{
+    color:#7f5539;
+    margin-bottom:15px;
+    border-bottom:2px solid #ddb892;
+    padding-bottom:5px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.skill{
+    background:#ddb892;
+    color:#4e342e;
+    padding:10px 18px;
+    border-radius:25px;
+    font-weight:600;
+}
+
+.social-links{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.social-links a{
+    text-decoration:none;
+    color:#7f5539;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.social-links a:hover{
+    color:#b08968;
+    padding-left:8px;
+}
+
+.print-btn{
+    display:block;
+    margin:40px auto;
+    padding:15px 30px;
+    background:#b08968;
+    color:white;
+    border:none;
+    border-radius:30px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.print-btn:hover{
+    background:#7f5539;
+}
+
+footer{
+    background:#b08968;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+@media(max-width:768px){
+    header h1{
+        font-size:2.2rem;
+    }
+
+    .skills{
+        justify-content:center;
+    }
+}
+
+@media print {
+
+    .print-btn{
+        display:none;
+    }
+
+    body{
+        background:white;
+    }
+
+    .card{
+        box-shadow:none;
+        border:1px solid #ddd;
+        page-break-inside:avoid;
+    }
+
+    header{
+        background:#b08968 !important;
+        -webkit-print-color-adjust:exact;
+        print-color-adjust:exact;
+    }
+
+    footer{
+        background:#b08968 !important;
+        -webkit-print-color-adjust:exact;
+        print-color-adjust:exact;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Mariana Escobar Guzmán</h1>
+    <p>Tecnóloga en Gestión Administrativa | Estudiante de Administración Tecnológica</p>
+</header>
+
+<div class="container">
+
+```
+<section class="card">
+    <h2>Acerca de mí</h2>
+    <p>
+        Soy una estudiante de Administración Tecnológica y egresada de la Tecnología en Gestión Administrativa.
+        Me caracterizo por ser una persona creativa, responsable y con habilidades de liderazgo.
+        Tengo una gran capacidad para adaptarme a los cambios y asumir nuevos retos y proyectos profesionales,
+        aportando siempre compromiso, organización y orientación a resultados.
+    </p>
+</section>
+
+<section class="card">
+    <h2>Información Personal</h2>
+
+    <p><strong>Nombre:</strong> Mariana Escobar Guzmán</p>
+    <p><strong>Lugar de nacimiento:</strong> Bello, Antioquia - Colombia</p>
+    <p><strong>Formación:</strong> Tecnóloga en Gestión Administrativa y estudiante de Administración Tecnológica.</p>
+
+</section>
+
+<section class="card">
+    <h2>Habilidades</h2>
+
+    <div class="skills">
+        <div class="skill">Sistemas de Información</div>
+        <div class="skill">Tableros de Control</div>
+        <div class="skill">Excel Avanzado</div>
+        <div class="skill">Análisis de Datos</div>
+        <div class="skill">Gestión Administrativa</div>
+        <div class="skill">Liderazgo</div>
+        <div class="skill">Adaptabilidad</div>
+        <div class="skill">Trabajo en Equipo</div>
+    </div>
+</section>
+
+<section class="card">
+    <h2>Perfil Profesional</h2>
+
+    <p>
+        Mi interés profesional está enfocado en la gestión administrativa, el análisis de información
+        y la construcción de soluciones basadas en datos. Me apasiona el uso de herramientas tecnológicas,
+        tableros de control y Excel para apoyar la toma de decisiones y mejorar los procesos organizacionales.
+    </p>
+</section>
+
+<section class="card">
+    <h2>Redes Sociales</h2>
+
+    <div class="social-links">
+
+        <a href="https://www.facebook.com/" target="_blank">
+            📘 Facebook: Mariana Escobar Guzmán
+        </a>
+
+        <a href="https://www.instagram.com/marianae12_/" target="_blank">
+            📷 Instagram: @marianae12_
+        </a>
+
+        <a href="https://www.tiktok.com/@marianaescobar155" target="_blank">
+            🎵 TikTok: @marianaescobar155
+        </a>
+
+    </div>
+</section>
+
+<button class="print-btn" onclick="imprimirPDF()">
+    📄 Descargar Portafolio en PDF
+</button>
+```
+
+</div>
+
+<footer>
+    <p>© 2026 - Mariana Escobar Guzmán | Portafolio Profesional</p>
+</footer>
+
+<script>
+function imprimirPDF(){
+    window.print();
+}
+</script>
+
+</body>
+</html>
