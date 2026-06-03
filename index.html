@@ -37,13 +37,14 @@ header p{
 }
 
 .profile-photo{
-width:180px;
-height:180px;
-border-radius:50%;
-object-fit;
-border:5px solid rgba(255,255,255,0.8);
-margin-bottom:20px;
-box-shadow:0 4px 15px rgba(0,0,0,0.2);
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+    margin:0 auto 20px auto;
+    border:5px solid rgba(255,255,255,0.8);
+    box-shadow:0 4px 15px rgba(0,0,0,0.2);
 }
 
 .container{
@@ -170,18 +171,22 @@ footer{
 
 <body>
 
-<img 
+<header>
 
-    src="foto-mariana.jpg" 
-    alt="Foto de Mariana Escobar Guzmán" 
-    class="profile-photo" 
-    > 
-    <h1>Mariana Escobar Guzmán</h1> 
-    
-    <p> 
-        Tecnóloga en Gestión Administrativa | 
-        Estudiante de Administración Tecnológica 
+    <img
+        src="foto-mariana.jpg"
+        alt="Foto de Mariana Escobar Guzmán"
+        class="profile-photo"
+    >
+
+    <h1>Mariana Escobar Guzmán</h1>
+
+    <p>
+        Tecnóloga en Gestión Administrativa |
+        Estudiante de Administración Tecnológica
     </p>
+
+</header>
 
 <div class="container">
 
